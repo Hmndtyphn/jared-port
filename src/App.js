@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
+import Nav from '../src/components/Nav/Nav'
 import About from '../src/components/About/About'
+
+
 
 function App() {
   const [sections] = useState([
@@ -26,18 +29,18 @@ function App() {
 
   const [ currentSection, setCurrentSection ] = useState(sections[0])
 
-  // return (
-  //   <div>
-  //     <Nav
-  //     sections = {sections}
-  //     currentSection = {currentSection}
-  //     setCurrentSection = {setCurrentSection} />
-  //     <main>
-  //       {currentSection.component}
-  //     </main>
-  //     <Footer />
-  //   </div>
-  // );
+  return (
+    <div>
+      <Nav
+      sections = {sections}
+      currentSection = {currentSection}
+      setCurrentSection = {setCurrentSection} />
+      <main>
+        {currentSection.component}
+      </main>
+      {/* <Footer /> */}
+    </div>
+  );
 }
 
 export default App;

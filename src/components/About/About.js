@@ -3,6 +3,7 @@ import "./css/About.css";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+import { Container } from "@mui/material";
 
 function About() {
     return (
@@ -19,9 +20,9 @@ function About() {
         
         <Grid container sx={{display: "flex", flexWrap: "wrap", justifyContent: "center"}} alignItems="center">
         <Grid item xs>
-            <Container>
+            {/* <Container>
                 <img src={coverPhoto} style={{ height: "50rem", width: "45rem" }} alt="cover" />
-            </Container>
+            </Container> */}
         </Grid>
         <Grid item xs={5}>
           <Container className="background">
