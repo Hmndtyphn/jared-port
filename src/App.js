@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+import React, { appBuild } from 'react';
 import './App.css';
 
 function App() {
+  const [sections] = appBuild([
+    {
+      name: 'About',
+      component: <About />
+    },
+
+    {
+      name: 'Portfolio',
+      component: <Portfolio />
+    },
+    {
+      name: 'Resume',
+      component: <Resume />
+    },
+
+    {
+      name: 'Contact',
+      component: <Contact />
+    }
+  ])
+
+  const [ currentSection, setCurrentSection ] = appBuild(sections[0])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav
+      sections = {sections}
+      currentSection = {currentSection}
+      setCurrentSection = {setCurrentSection} />
+      <main>
+        {currentSection.component}
+      </main>
+      <Footer />
     </div>
   );
 }
