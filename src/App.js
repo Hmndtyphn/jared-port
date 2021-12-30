@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './App.css';
 import Nav from '../src/components/Nav/Nav'
 import About from '../src/components/About/About'
+import Contact from '../src/components/Contact/Contact'
+import Portfolio from '../src/components/Portfolio/Portfolio'
+
 
 
 
@@ -12,19 +15,19 @@ function App() {
       component: <About />
     },
 
-    // {
-    //   name: 'Portfolio',
-    //   component: <Portfolio />
-    // },
+    {
+      name: 'Portfolio',
+      component: <Portfolio />
+    },
     // {
     //   name: 'Resume',
     //   component: <Resume />
     // },
 
-    // {
-    //   name: 'Contact',
-    //   component: <Contact />
-    // }
+    {
+      name: 'Contact',
+      component: <Contact />
+    }
   ])
 
   const [ currentSection, setCurrentSection ] = useState(sections[0])

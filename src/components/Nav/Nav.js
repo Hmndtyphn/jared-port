@@ -33,7 +33,7 @@ function LinkTab(props) {
 const StyledLink = styled((props) => 
   <LinkTab {...props} />)(
     ({ theme }) => ({
-      fontFamily: "Give You Glory",
+      fontFamily: "Permanent Marker",
       fontWeight: "Bold",
       color: "#8550C0",
       "&.Mui-selected": {

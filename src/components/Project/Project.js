@@ -21,11 +21,11 @@ function Project() {
             cols: 1
         },
         {
-            image: "santas-nice-list",
-            title: "Santa's Nice List",
-            description: "",
+            image: "Group-proj-2",
+            title: "Down Scout",
+            description: "A simple server detector, built with authentication, and favorites in mind.",
             appLink: "",
-            repoLink: "",
+            repoLink: "https://github.com/Hmndtyphn/Group-proj-2",
             rows: 1,
             cols: 2
         },
