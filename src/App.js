@@ -4,7 +4,7 @@ import Nav from '../src/components/Nav/Nav'
 import About from '../src/components/About/About'
 import Contact from '../src/components/Contact/Contact'
 import Portfolio from '../src/components/Portfolio/Portfolio'
-
+import Footer from '../src/components/Footer/Footer'
 
 
 
@@ -41,7 +41,7 @@ function App() {
       <main>
         {currentSection.component}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
