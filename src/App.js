@@ -1,3 +1,4 @@
+// import dependencies
 import React, { useState } from 'react';
 import './App.css';
 import Nav from '../src/components/Nav/Nav'
@@ -8,7 +9,7 @@ import Footer from '../src/components/Footer/Footer'
 import Resume from '../src/components/Resume/Resume'
 
 
-
+// import sections from file structure
 function App() {
   const [sections] = useState([
     {
@@ -31,8 +32,10 @@ function App() {
     }
   ])
 
+  // uses current state of sections
   const [ currentSection, setCurrentSection ] = useState(sections[0])
 
+// return the various sections *note nav bar is set 
   return (
     <div>
       <Nav

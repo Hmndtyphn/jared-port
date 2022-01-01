@@ -1,8 +1,10 @@
+// import dependencies
 import React from 'react';
 import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import Project from "../Project/Project";
 
+// portfolio react function
 function Portfolio() {
 
     return (
