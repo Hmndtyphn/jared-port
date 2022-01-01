@@ -1,7 +1,10 @@
+// import file dependencies
 import React from 'react';
 import Container from '@mui/material/Container'
 import Typography from "@mui/material/Typography";
 import resumeFile from "../../assets/resume/Resume2021.pdf"
+
+// react resume 
 function Resume() {
     return (
         <Container align="center">
