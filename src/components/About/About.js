@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import { Container } from "@mui/material";
-import coverPhoto from "../../assets/cover/IMG_2993.jpg";
+import coverPhoto from "../../assets/cover/IMG_4231.jpeg";
 
 // about function
 function About() {
@@ -16,7 +16,7 @@ function About() {
             Hello, I'm Jared Elliott
 
         </Typography>
-        {/* Issue with font not changing here */}
+        {/* Issue with font not changing here------related to sizing... */}
         <Typography className="sub-title" variant="h4" align="left" sx={{ pb: "5rem"}} gutterBottom>
             Full Stack Web Developer
         </Typography>
@@ -26,7 +26,7 @@ function About() {
         <Grid container sx={{display: "flex", flexWrap: "wrap", justifyContent: "center"}} alignItems="center">
         <Grid item xs>
             <Container>
-                <img src={coverPhoto} style={{ height: "25rem", width: "20rem" }} align="center" alt="cover" />
+                <img src={coverPhoto} style={{ height: "40rem", width: "30rem" }} align="right" alt="cover" />
             </Container>
         </Grid>
         <Grid item xs={5}>

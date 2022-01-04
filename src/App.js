@@ -12,6 +12,7 @@ import Resume from '../src/components/Resume/Resume'
 // import sections from file structure
 function App() {
   const [sections] = useState([
+    // nav bar sections for page scroll
     {
       name: 'About',
       component: <About />
@@ -50,4 +51,5 @@ function App() {
   );
 }
 
+// exports app
 export default App;

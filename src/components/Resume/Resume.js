@@ -4,11 +4,12 @@ import Container from '@mui/material/Container'
 import Typography from "@mui/material/Typography";
 import resumeFile from "../../assets/resume/Resume2021.pdf"
 
-// react resume 
+// react resume func
 function Resume() {
+    // returns current resume (pulls from public)
     return (
         <Container align="center">
-            <Typography className="title" align="center" variant="h2" sx={{p: "5rem"}}>
+            <Typography className="title" align="center" variant="h3" sx={{p: "5rem"}}>
                 Resume
             </Typography>
 
@@ -16,9 +17,9 @@ function Resume() {
             id="resume-pdf"
             title="Jared Elliott Resume"
             src={resumeFile}
-            frameboarder="1"
+            frameboarder="5"
             scrolling="auto"
-            height="1100"
+            height="1200"
             width="100%"></iframe>
         </Container>
     )

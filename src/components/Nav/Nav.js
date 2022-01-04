@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import {  Tabs, Tab } from '@mui/material';
 import "./css/Nav.css";
 
+// top page tabs, using MUI
 const StyledTabs = styled((props) => (
   <Tabs 
     {...props}
@@ -12,13 +13,14 @@ const StyledTabs = styled((props) => (
   "& .MuiTabs-indicator": {
     display: "flex",
     justifyContent: "center",
-    backgroundColor: "var(--darker-purple)",
+    backgroundColor: "transparent",
     "& .MuiTabs-indicatorSpan": {
      backgroundColor: "transparent"
     }
   }
 })
 
+// on click event for nav bar tabs
 function LinkTab(props) {
     return (
         <Tab
@@ -30,19 +32,21 @@ function LinkTab(props) {
     )
 }
 
+// navbar styling/ on click styling
 const StyledLink = styled((props) => 
   <LinkTab {...props} />)(
     ({ theme }) => ({
       fontFamily: "Permanent Marker",
       fontWeight: "Bold",
-      color: "#8550C0",
+      color: "#00000",
       "&.Mui-selected": {
-        color: "var(--darker-purple)",
-        fontWeight: "Bold"
+        color: "dark-blue",
+       
       }
     })
   )
 
+  // display page based on current tab state/ sets value to chosen value
 function NavTabs(props) {
   const { sections = [], currentSection, setCurrentSection } = props;
   const [value, setValue] = useState(0);
@@ -51,6 +55,7 @@ function NavTabs(props) {
       setValue(newValue);
   };
 
+  // returns above functions and maps as navbar html
   return (
     <header>
       <nav>
@@ -66,4 +71,5 @@ function NavTabs(props) {
   );
 }
 
+// exports the navtabs
 export default NavTabs;

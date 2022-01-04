@@ -55,26 +55,26 @@ html {
 
 .title {
     font-family: "Permanent Marker";
-    text-decoration: underline #92a5f765 2px;
-    color: var(--dark-grey);
+    text-decoration: underline black 2px;
+    color: black;
 }
 
 .sub-title {
-    font-family: "Permanent Marker", cursive;
+    font-family: "Permanent Marker";
     font-size: 3.5rem;
-    text-decoration: underline #92a5f765 2px;
-    color: var(--dark-grey);
+    text-decoration: underline black 2px;
+    color: black;
 }
 
 .about-title {
-    font-family: "Permanent Marker", cursive;
-    text-decoration: underline #aa86d3a9 2px;
-    color: var(--dark-grey);
+    font-family: "Permanent Marker";
+    text-decoration: underline black 2px;
+    color: black;
 }
 
 .about-content {
-    font-family: "Permanent Marker", cursive;
+    font-family: "Permanent Marker";
     font-weight: bold;
     font-size: 1.4rem;
-    color: var(--dark-grey);
+    color: black;
 }

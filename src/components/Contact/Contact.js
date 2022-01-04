@@ -4,10 +4,10 @@ import Container from "@mui/material/Container";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-// import SendIcon from "@mui/icons-material/Send";
 import { validateEmail } from "../../utils/helpers";
 import "./css/Contact.css";
 
+// contact form using MUI 
 const ContactForm = styled(TextField) ({
     "& label.Mui-focused": {
         color: "#8A8AFF",
@@ -32,6 +32,7 @@ const ContactForm = styled(TextField) ({
     },
 });
 
+// button on contact form
 const ColorButton = styled(Button) (({ theme }) => ({
         color: "var(--dark-grey)",
     backgroundColor: "#92a4f775",
@@ -41,6 +42,7 @@ const ColorButton = styled(Button) (({ theme }) => ({
     }
 }))
 
+// contact form build
 function Contact() {
     const [formState, setFormState] = useState({
         name: "",
@@ -77,6 +79,7 @@ function Contact() {
         console.log(formState);
     }
 
+    // returns the contact form, in html, with all styling
     return (
         <Container
         component="form"
@@ -141,7 +144,6 @@ function Contact() {
         size="Large"
         variant="contained"
         type="submit"
-        // endIcon={<SendIcon fontsize="large" />}
         >
             Submit{" "}
         </ColorButton>

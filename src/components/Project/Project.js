@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {ImageList, ImageListItem, ImageListItemBar} from '@mui/material'
 
+// allows auto image upload for github project files
 function srcset(image, size, rows = 1, cols = 1) {
     return {
       src: `https://res.cloudinary.com/dceprxjzq/image/upload/w_${size * cols},h_${size * rows},c_lfill/${image}.jpg`,
@@ -8,6 +9,7 @@ function srcset(image, size, rows = 1, cols = 1) {
     };
   }
 
+//   project data 1-6
 function Project() {
 
     const [projects] = useState([
@@ -15,8 +17,8 @@ function Project() {
             image: "budget-tracker",
             title: "Budget Tracker",
             description: "An app to track a budget on or offline",
-            appLink: "",
-            repoLink: "https://github.com/Hmndtyphn/jared-port",
+            appLink: "https://agile-plateau-97433.herokuapp.com/",
+            repoLink: "https://github.com/Hmndtyphn/budget-tracker",
             rows: 1,
             cols: 1
         },
@@ -67,6 +69,7 @@ function Project() {
         }
     ]);
 
+    // returns the above project data
     return (
 
         <ImageList
@@ -75,6 +78,7 @@ function Project() {
           cols={3}
           rowHeight={525}
         >
+            {/* maps data with images */}
             {projects.map((project) => (
                 <ImageListItem key={project.image} cols={project.cols || 1} rows={project.rows || 1}>
                     <img 
@@ -96,4 +100,5 @@ function Project() {
     )
 }
 
+// exports project file
 export default Project;

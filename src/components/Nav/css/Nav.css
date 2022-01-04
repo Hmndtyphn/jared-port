@@ -3,16 +3,16 @@
 }
 
 .nav-tabs {
-    font-family: "Give You Glory";
+    font-family: "Permanent";
     font-weight: bolder;
     font-size: 18px;
-    color: var(--darker-purple);
+    color: black;
 }
 
 .css-1s94p7r-MuiButtonBase-root-MuiTab-root.Mui-selected {
-    color: #6d5786;
+    color: #000000;
 }
 
 .css-1aquho2-MuiTabs-indicator {
-    background-color: #6d5786ad;
+    background-color: #0060faad;
 }
