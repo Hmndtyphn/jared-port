@@ -34,7 +34,7 @@ function About() {
         <Grid item xs={5}>
           <Container className="background">
             <Typography className="about-title" variant="h3" align="center" sx={{ pb: "2rem"}} gutterBottom>
-                Get To Know Me
+                About me:
             </Typography>
 
             {/* about section */}
