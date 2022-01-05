@@ -12,8 +12,8 @@ import coverPhoto2 from "../../assets/cover/IMG_4231.jpeg";
 function About() {
     return (
         // introduction page (needs photo)
-        <Box sx={{ flexGrow: 1, px: 5, pt: 0, pb: 15 }}>
-        <Typography className="title" variant="h1" component="h2" align="left" sx={{pt: 10}} gutterBottom>
+        <Box sx={{ px: 5, pt: .1, pb: 15 }}>
+        <Typography className="title" variant="h1" component="h1" align="left" sx={{pt: 10}} gutterBottom>
             Hello, I'm Jared Elliott
 
         </Typography>
@@ -27,8 +27,8 @@ function About() {
         <Grid container sx={{display: "flex", flexWrap: "wrap", justifyContent: "center"}} alignItems="center">
         <Grid item xs>
             <Container>
-                <img src={coverPhoto} style={{ height: "30rem", width: "25rem" }} align="right" alt="" />
-                <img src={coverPhoto2} style={{ height: "30rem", width: "25rem" }} align="center" alt="" />
+                <img src={coverPhoto} style={{ height: "30rem", width: "25rem" }} align="right" alt="my image 1" />
+                <img src={coverPhoto2} style={{ height: "30rem", width: "25rem" }} align="center" alt="my image 2" />
             </Container>
         </Grid>
         <Grid item xs={5}>

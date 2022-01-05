@@ -7,7 +7,7 @@ import "./css/Footer.css";
 // simple mui footer 
 function Footer() {
     return (
-        <Box component="footer" className="footer" sx={{ p:.5, flexGrow: 0 }}>
+        <Box component="footer" className="footer" sx={{ p:.1 }}>
             <Grid container cols={12} spacing={1}>
                 <Grid item xs>
                     <Typography className="footer-name" variant="subtitle1" align="left">
