@@ -1,9 +1,12 @@
+// react dependency
 import React, { useState } from "react";
+// mui styling
 import { styled } from "@mui/material/styles";
 import Container from "@mui/material/Container";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+// validate email from helpers/ css
 import { validateEmail } from "../../utils/helpers";
 import "./css/Contact.css";
 
@@ -14,20 +17,20 @@ const ContactForm = styled(TextField) ({
     },
 
     "& .MuiInput-underline:after": {
-        borderBottomColor: "#2F61E1",
+        borderBottomColor: "#000000",
       },
 
       "& .MuiOutlinedInput-root": {
         "& fieldset": {
-          borderColor: "#8A8AFF",
+          borderColor: "#000000",
         },
 
         "&:hover fieldset": {
-          borderColor: "#CCCCFF",
+          borderColor: "dark-blue",
         },
 
         "&.Mui-focused fieldset": {
-          borderColor: "#8A8AFF",
+          borderColor: "dark-blue",
         },
     },
 });
