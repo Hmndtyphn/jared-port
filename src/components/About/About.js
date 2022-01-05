@@ -6,13 +6,13 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import { Container } from "@mui/material";
 import coverPhoto from "../../assets/cover/IMG_4231.jpeg";
-import coverPhoto2 from "../../assets/cover/IMG_4231.jpeg";
+import coverPhoto2 from "../../assets/cover/IMG_2993.jpg";
 
 // about function
 function About() {
     return (
         // introduction page (needs photo)
-        <Box sx={{ px: 5, pt: .1, pb: 15 }}>
+        <Box sx={{ px: 5, pt: 0, pb: 15 }}>
         <Typography className="title" variant="h1" component="h1" align="left" sx={{pt: 10}} gutterBottom>
             Hello, I'm Jared Elliott
 
