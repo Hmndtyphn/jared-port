@@ -6,13 +6,14 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import { Container } from "@mui/material";
 import coverPhoto from "../../assets/cover/IMG_4231.jpeg";
+import coverPhoto2 from "../../assets/cover/IMG_4231.jpeg";
 
 // about function
 function About() {
     return (
         // introduction page (needs photo)
-        <Box sx={{ flexGrow: 1, px: 10, pt: 15, pb: 30 }}>
-        <Typography className="title" variant="h1" component="h2" align="left" sx={{pt: 5}} gutterBottom>
+        <Box sx={{ flexGrow: 1, px: 5, pt: 0, pb: 15 }}>
+        <Typography className="title" variant="h1" component="h2" align="left" sx={{pt: 10}} gutterBottom>
             Hello, I'm Jared Elliott
 
         </Typography>
@@ -26,7 +27,8 @@ function About() {
         <Grid container sx={{display: "flex", flexWrap: "wrap", justifyContent: "center"}} alignItems="center">
         <Grid item xs>
             <Container>
-                <img src={coverPhoto} style={{ height: "40rem", width: "30rem" }} align="right" alt="cover" />
+                <img src={coverPhoto} style={{ height: "30rem", width: "25rem" }} align="right" alt="" />
+                <img src={coverPhoto2} style={{ height: "30rem", width: "25rem" }} align="center" alt="" />
             </Container>
         </Grid>
         <Grid item xs={5}>
@@ -37,7 +39,7 @@ function About() {
 
             {/* about section */}
             <Typography  className="about-content" variant="subtitle1" align="center">
-                Hi there, I'm Jared Elliott, a full stack web developer from St. Louis, MO.
+                Hi there, I'm Jared Elliott, a full stack web developer from St. Louis, MO. I am currently finishing a Full stack web development course with Wash U. In my spare time, I enjoy writing music, gaming on my PS5 or Nintendo Switch, or trying out new craft beers.
             </Typography>
           </Container>
         </Grid>
