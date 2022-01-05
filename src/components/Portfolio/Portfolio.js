@@ -9,8 +9,9 @@ function Portfolio() {
 
     // returns the portfolio data
     return (
-        <Box sx={{ p: "5rem"}}>
-            <Typography className="title" align="center" variant="h2" sx={{pb: "5rem"}}>Projects I've Been Working On</Typography>
+        <Box sx={{ p: "10rem"}}>
+            <Typography className="title" align="center" variant="h2" sx={{pb: "10rem"}}>Projects I've Been Working On</Typography>
+            <br />
             <Project />
         </Box>
     )

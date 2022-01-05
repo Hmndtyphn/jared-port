@@ -38,16 +38,16 @@ const ColorButton = styled(Button) (({ theme }) => ({
     backgroundColor: "#92a4f775",
     '&:hover': {
         backgroundColor: "#92a4f725",
-        color: "var(--dark-grey)"
+        color: "blue"
     }
 }))
 
 // contact form build
 function Contact() {
     const [formState, setFormState] = useState({
-        name: "",
-        email: "",
-        message: "",
+        name: " ",
+        email: " ",
+        message: " ",
         
     });
     const { name, email, message } = formState;
