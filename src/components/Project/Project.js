@@ -4,8 +4,8 @@ import {ImageList, ImageListItem, ImageListItemBar} from '@mui/material'
 // allows auto image upload for github project files
 function srcset(image, size, rows = 1, cols = 1) {
     return {
-      src: `https://res.cloudinary.com/dceprxjzq/image/upload/w_${size * cols},h_${size * rows},c_lfill/${image}.jpg`,
-      srcSet: `https://res.cloudinary.com/dceprxjzq/image/upload/w_${size * cols},h_${size * rows},c_lfill/${image}.jpg`,
+      src: `https://res.cloudinary.com/hmndtyphn/image/upload/w_${size * cols},h_${size * rows},c_lfill/${image}.jpg`,
+      srcSet: `https://res.cloudinary.com/hmndtyphn/image/upload/w_${size * cols},h_${size * rows},c_lfill/${image}.jpg`,
     };
   }
 
