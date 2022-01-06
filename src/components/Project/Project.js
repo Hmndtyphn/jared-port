@@ -92,6 +92,7 @@ function Project() {
           cols={3}
           rowHeight={525}
         >
+            
             {/* maps data with images */}
             {projects.map((project) => (
                 <ImageListItem key={project.image} cols={project.cols || 1} rows={project.rows || 1}>
@@ -101,6 +102,7 @@ function Project() {
                         loading="lazy"
                         onClick={() => (window.location.href = project.appLink)}
                     ></img>
+
                     {/* add's footer description to image */}
                     <ImageListItemBar
                         title={project.title}
