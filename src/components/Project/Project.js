@@ -42,7 +42,7 @@ function Project() {
         {
             image: "e-commerce-backend",
             title: "E commerce Backend",
-            description: "",
+            description: "An e-commerce backend, made using mongodb, express, and node modules",
             appLink: "",
             repoLink: "https://github.com/Hmndtyphn/e-commerce-backend",
             rows: 1,
@@ -53,7 +53,7 @@ function Project() {
         {
             image: "note-takr",
             title: "Note Taker",
-            description: "",
+            description: "A simple note taking application for everyday use.",
             appLink: "https://note-takr23.herokuapp.com/",
             repoLink: "https://github.com/Hmndtyphn/note-takr",
             rows: 1,
@@ -64,7 +64,7 @@ function Project() {
         {
             image: "Weather-Pro",
             title: "Weather Pro",
-            description: "",
+            description: "A simple weather application",
             appLink: "https://hmndtyphn.github.io/Weather-Pro/",
             repoLink: "https://github.com/Hmndtyphn/Weather-Pro",
             rows: 1,
