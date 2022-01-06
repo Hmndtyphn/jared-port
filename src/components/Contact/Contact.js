@@ -1,11 +1,13 @@
 // react dependency
 import React, { useState } from "react";
+
 // mui styling
 import { styled } from "@mui/material/styles";
 import Container from "@mui/material/Container";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+
 // validate email from helpers/ css
 import { validateEmail } from "../../utils/helpers";
 import "./css/Contact.css";
@@ -53,9 +55,12 @@ function Contact() {
         message: " ",
         
     });
+
+    // contact form parameters
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState("");
 
+    // email validation
     function handleChange(e) {
         if (e.target.name === "email") {
             const isValid = validateEmail(e.target.value);
@@ -77,6 +82,8 @@ function Contact() {
             setFormState({ ...formState, [e.target.name]: e.target.value});
         }
     }
+
+    // handles submitted form data
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState);
@@ -103,6 +110,7 @@ function Contact() {
         Contact Me!
         </Typography>
 
+{/* input name */}
         <div>
             <ContactForm
             className="text-input"
@@ -114,6 +122,7 @@ function Contact() {
             ></ContactForm>
         </div>
 
+{/* input email */}
         <div>
             <ContactForm
             className="text-input"
@@ -125,6 +134,7 @@ function Contact() {
             ></ContactForm>
         </div>
 
+{/* input message */}
         <div>
             <ContactForm
             className="text-input"
@@ -142,6 +152,7 @@ function Contact() {
             </div>
         )}
 
+{/* submit button  */}
         <ColorButton
         className="submit-btn"
         size="Large"
@@ -155,4 +166,5 @@ function Contact() {
     );
 }
 
+// exports contact
 export default Contact;

@@ -46,9 +46,9 @@ function About() {
                 About me:
             </Typography>
 
-            {/* about section */}
+            {/* about me body section */}
             <Typography  className="about-content" variant="subtitle1" align="center">
-                Hi there, I'm Jared Elliott, a full stack web developer from St. Louis, MO. I am currently finishing a Full stack web development course with Wash U. In my spare time, I enjoy writing music, gaming on my PS5 or Nintendo Switch, or trying out new craft beers.
+                Hi there, I'm Jared Elliott, a full stack web developer from St. Louis, MO. I am currently finishing a Full stack web development course with Wash U. In my spare time, I enjoy writing music, gaming on my PS5 or Nintendo Switch, or trying out new craft beers and board games.
             </Typography>
           </Container>
         </Grid>

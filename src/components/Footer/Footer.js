@@ -1,7 +1,12 @@
+// import react
 import React from "react";
+
+// import mui 
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+
+// import CSS styling
 import "./css/Footer.css";
 
 // simple mui footer 

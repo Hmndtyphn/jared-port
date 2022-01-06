@@ -1,11 +1,16 @@
 // import file dependencies
 import React from 'react';
+
+// import mui 
 import Container from '@mui/material/Container'
 import Typography from "@mui/material/Typography";
+
+// import resume file
 import resumeFile from "../../assets/resume/Resume2021.pdf"
 
 // react resume func
 function Resume() {
+
     // returns current resume (pulls from public)
     return (
         <Container align="center">
@@ -13,6 +18,7 @@ function Resume() {
                 Resume
             </Typography>
 
+{/* resume styling/ sizing */}
             <iframe
             id="resume-pdf"
             title="Jared Elliott Resume"
@@ -25,4 +31,5 @@ function Resume() {
     )
 }
 
+// exports resume
 export default Resume;

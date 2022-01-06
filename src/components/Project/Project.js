@@ -1,4 +1,7 @@
+// import react
 import React, {useState} from 'react';
+
+// import image list ***** not working!!!!!!!!! ******
 import {ImageList, ImageListItem, ImageListItemBar} from '@mui/material'
 
 // allows auto image upload for github project files
@@ -13,6 +16,7 @@ function srcset(image, size, rows = 1, cols = 1) {
 function Project() {
 
     const [projects] = useState([
+        // project 1 -left
         {
             image: "budget-tracker",
             title: "Budget Tracker",
@@ -22,6 +26,8 @@ function Project() {
             rows: 1,
             cols: 1
         },
+
+        // project 2- right
         {
             image: "Group-proj-2",
             title: "Down Scout",
@@ -31,6 +37,8 @@ function Project() {
             rows: 1,
             cols: 2
         },
+
+        // project 3 left
         {
             image: "e-commerce-backend",
             title: "E commerce Backend",
@@ -40,6 +48,8 @@ function Project() {
             rows: 1,
             cols: 2
         },
+
+        // project 4 - right
         {
             image: "note-takr",
             title: "Note Taker",
@@ -49,6 +59,8 @@ function Project() {
             rows: 1,
             cols: 1
         },
+
+        // project 5 left
         {
             image: "Weather-Pro",
             title: "Weather Pro",
@@ -58,6 +70,8 @@ function Project() {
             rows: 1,
             cols: 1
         },
+
+        // project 6 -right
         {
             image: "",
             title: "",
@@ -87,12 +101,14 @@ function Project() {
                         loading="lazy"
                         onClick={() => (window.location.href = project.appLink)}
                     ></img>
+                    {/* add's footer description to image */}
                     <ImageListItemBar
                         title={project.title}
                         subtitle={project.description}
                         >
 
                     </ImageListItemBar>
+                    
                 </ImageListItem>
             ))}
         </ImageList>
