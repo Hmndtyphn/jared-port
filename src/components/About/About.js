@@ -1,11 +1,13 @@
 // import dependencies
 import React from "react";
 import "./css/About.css";
+
 // mui
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import { Container } from "@mui/material";
+
 // photo imports for about page
 import coverPhoto from "../../assets/cover/IMG_4231.jpeg";
 import coverPhoto2 from "../../assets/cover/dsc02379.jpg";
@@ -32,6 +34,7 @@ function About() {
         {/* photo is not coming through */}
         <Grid container sx={{display: "flex", flexWrap: "wrap", justifyContent: "center"}} alignItems="center">
         <Grid item xs>
+
           {/* images */}
             <Container>
                 <img src={coverPhoto} style={{ height: "20rem", width: "15rem" }} align="left" alt="my image 1" />
@@ -39,6 +42,7 @@ function About() {
                 <img src={coverPhoto3} style={{ height: "20rem", width: "15rem" }} align="center" alt="my image 3" />
             </Container>
         </Grid>
+
         {/* about me section */}
         <Grid item xs={5}>
           <Container className="background">
