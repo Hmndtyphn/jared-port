@@ -21,7 +21,6 @@ function About() {
         <Box sx={{ px: 5, pt: 0, pb: 15 }}>
         <Typography className="title" variant="h1" component="h1" align="left" sx={{pt: 10}} gutterBottom>
             Hello, I'm Jared Elliott
-
         </Typography>
 
         {/* Issue with font not changing here------related to sizing... */}

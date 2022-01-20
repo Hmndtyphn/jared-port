@@ -18,11 +18,11 @@ function Project() {
     const [projects] = useState([
         // project 1 -left
         {
-            image: "budget-tracker",
-            title: "Budget Tracker",
-            description: "A budget tracker application, built using webpack, mongodb, as a progressive web application. This application is built to update banking budgets for offline use.",
-            appLink: "https://agile-plateau-97433.herokuapp.com/",
-            repoLink: "https://github.com/Hmndtyphn/budget-tracker",
+            image: "Potters-Marauders",
+            title: "Potters Marauders",
+            description: "A fun Harry Potter trivia application, using MERN stack to create",
+            appLink: "https://stark-plains-49295.herokuapp.com/",
+            repoLink: "https://github.com/Hmndtyphn/harry-potter-house",
             rows: 1,
             cols: 1
         },
